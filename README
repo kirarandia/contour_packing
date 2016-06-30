@@ -11,6 +11,7 @@ picture/illustrator file
 goal:
 given multiple picture objects pack them with minimum waste on a sheet of arbitrary size
 
+
 size is constrained by max width/height
 
 Common use case:
