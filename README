@@ -1,0 +1,69 @@
+:Languages to consider:
+
+Python
+Ruby
+Haskell
+
+Input: similar to processing (js)
+input:
+picture/illustrator file
+
+goal:
+given multiple picture objects pack them with minimum waste on a sheet of arbitrary size
+
+size is constrained by max width/height
+
+Common use case:
+input: Object A
+output: A * (scaled by a factor)
+set of objects which are identical to A, but scaled(?)
+{A, A*1.1, A*1.2, A*1.3}
+
+Systematically scale object by 10% of the original size
+
+Parameters:
+• size of the scaled image (given as a range)
+•
+
+0) Image -> bit map - >contour (?)
+<use library here>
+image -> bitmap
+bitmap
+{
+size : (width,height)
+i \in (0,width) and j in (0,height)
+x[i,j]: {0,1}
+}
+
+Python
+picture_to_contour_object
+1) Input parsing:
+Object contour:
+
+IMPORTANT : think about data structures
+a) [ set of points <coordinates>  relative to the origin]
+b)  [set of vectors]
+c)
+
+•
+•
+
+1.5 ways of approximating real contours with triangles/squares
+(since the above might already have a stable solution)
+
+Haskell:
+{ function readContour: image -> contour
+2) Pack objects
+Come up with an algorithm for arranging objects }
+http://prolog.univie.ac.at/teaching/LVAs/KFK-Seminar/SS15/2002%20Lodi.pdf
+https://github.com/juj/RectangleBinPack/blob/master/RectangleBinPack.pdf
+Triangulation (?)
+use an already existing library
+
+parameters:
+Set of objects
+size of sheet
+
+3) Output:
+Illustrator file
+
